@@ -1,11 +1,11 @@
-#include "llvm/Transforms/Utils/PuneethPass.h"
+#include "llvm/Transforms/Utils/FunctionAnnotatorPass.h"
 #include "llvm/IR/Constants.h"
 #include "llvm/Testing/Annotations/Annotations.h"
 #include <random>
 
 using namespace llvm;
 
-PreservedAnalyses PuneethPass::run(Module &M,
+PreservedAnalyses FunctionAnnotatorPass::run(Module &M,
                                     ModuleAnalysisManager &AM) {
 
   //outs() << "FUNCTION ANNOTATOR PASS IS BEING RUN FOR FUNCTION " << M.getName() << "\n";
