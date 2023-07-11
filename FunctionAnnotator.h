@@ -13,7 +13,3 @@ namespace llvm {
 
     #endif // LLVM_TRANSFORMS_FUNCTIONANNOTATORPASS_H
 
-
-
-
-
