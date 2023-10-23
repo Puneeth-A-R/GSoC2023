@@ -33,6 +33,8 @@ The optimization level that is added as an attribute to each function, will late
 For me, the GSoC 2023 journey was an excellent learning experience. It was a terrific experience to work in an area that I'm very passionate about and where I have my core skills. I was able to learn various aspects of the development of a feature such as:
 
 - Working with and navigating a massive codebase
+- Working with a testing and build-system infrastructure software like CMake
+- Working with different version control software like Phabricator and Git
 - Writing clean, readable, and production-level code
 - Working in a team to understand how a feature can be addressed using various techniques.
 
