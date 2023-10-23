@@ -14,7 +14,7 @@ The optimization level that is added as an attribute to each function, will late
 
 - A pass to annotate functions was initially written, but later on, it was decided the best thing to do would be to extend an existing pass. `ForceFuncAttrs` pass was extended to consume values from a CSV file containing the function names and optimization values. See [here](https://github.com/llvm/llvm-project/blob/main/llvm/lib/Transforms/IPO/ForceFunctionAttrs.cpp) and [here](https://github.com/llvm/llvm-project/blob/main/llvm/include/llvm/Transforms/IPO/ForceFunctionAttrs.h).
 
-- A test case to verify that the newly added functionality works as intended was also written, It takes in a sample IR file and a CSV file and adds the desired optimization levels to the functions in the IR. See [here](https://github.com/llvm/llvm-project/tree/main/llvm/test/Transforms/ForcedFunctionAttrs).
+- A test case to verify that the newly added functionality works as intended was also written, It takes in a sample IR file and a CSV file and adds the desired optimization levels to the functions in the IR. See [here](https://github.com/llvm/llvm-project/tree/main/llvm/test/Transforms/ForcedFunctionAttrs). The `FunctionAnnotator.ll` file contains the crux of the test case.
 
 - An RFC (Request for Comments) to modify the `addPass(...)` function in the `FunctionPassManager` to take in an additional argument, namely a set of optimization levels for which a pass should run, was written. Discussion on this RFC in the community is still actively going on. See [here](https://discourse.llvm.org/t/rfc-making-the-pass-manager-aware-of-function-level-optimization-attributes/73736).
 
